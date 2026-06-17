@@ -448,3 +448,110 @@ To discover defects, risks, and unexpected behaviors that may not be identified 
 | Test Cases Required?         | No                                                                 |
 | Biggest Advantage?           | Finds defects missed by scripted testing                           |
 | Biggest Challenge?           | Coverage is difficult to measure                                   |
+
+How to write Test Cases
+---
+
+Mobile Applications
+
+| Testcase No | Assumptions | Testcase Criteria | Testcase Steps | Expected Results | Actual Results | Testcase Results |
+| ----------- | ----------- | ----------------- | -------------- | ---------------- | -------------- | ---------------- |
+| TC_001 | <Write your possibility to test> | <On which criteria you will test> | <Write your steps>  | <what should be results> | <what is actual results> | <Pass/Fail> |
+| TC_001 | Mobile app is avaiable for the user to test | Check if the controls are as peruser spec / requirements | 1. Launch mobile app.     2. Check for the controls | The controls should be as per the user specification(Checking for the font, font style,colour, logo) | The controls are as per the user specification | Pass |
+
+![alt text](tcma.png)
+
+BugZilla
+---
+
+If `Expected Result` and `Actual Result` output are same , its `Pass`.
+
+If `Expected Result` and `Actual Result` doesn't match its `Fail`. `Fail` == `Bug`.
+
+- `Bug`, `Defact`, `Fail` are Same Things
+
+- Once you find the `Bug` you have to raise and log the `Bug`.
+
+- For that we will requires some software where we can log the Bug.
+
+- Whenever you log the bug you will requires:
+  
+  1. Title the Bug - Name of bug
+  2. Reporter - The name of reporter , who find out bug ?
+  3. Priority of the Bug - Low, Medium, High
+  4. Sevarity of Bug - 
+  
+    - `ShowStopper or Bocker` - Which we can't test of this bug. Like, you tested web url - you found 404 Error - which can't be test by tester. Will be done by Developer.
+
+    - `Critical bug` - Some components/functionality not works, Apps slow downs.
+
+    - `High Bug` - Low critical.
+
+    - `Low/Enhancement`
+
+  5. `Assigned to` - Who is actual working on it.
+
+  6. `Date & Time` - While reported bug.
+
+**BugZilla**
+
+- It will helps you to generate `Bug Reports`.
+
+- Like, `800 Bugs` has reported, `X no. of bugs has been resolved`, `Y no. of bugs has moved to released`, `Z no. of bugs are Pending`.
+
+- You can manage bugs and Diff Project on this `BugZilla`.
+
+- This is just like `Jira Tool` where we manage diff tickets, projects and we can track all ticket status.
+
+- Create BugZilla account.
+
+- Create bugs
+
+- Give Bugs Title.
+
+- Write steps for what did you performed ?
+
+![alt text](bzsp.png)
+
+- What is actual results and expected results
+
+- Choose sevarity.
+
+![alt text](bzrs.png)
+
+
+- Raise bugs
+
+- Set Priority P1 and choose higher number == Higher Priority
+
+- Set sevarity
+
+- Choose on which platform this bugs found on linux, windows ?
+
+![alt text](bzfd.png)
+
+- Add Assign to and put comment on this bugs
+
+- ![alt text](bzcm.png)
+
+WireFrame TestCase
+---
+
+- Wireframe Testing means reviewing and validating the wireframe (UI design blueprint) before actual development starts.
+
+- A wireframe is a simple visual layout of a webpage, mobile app screen, or software screen showing:
+
+  - Buttons
+  - Text fields
+  - Menus
+  - Navigation flow
+  - Page structure
+
+- without colors, images, or actual functionality.
+
+- Check all possibilities as we earlier did.
+
+- **Test Case** - Individula rows in the test cases files
+
+- **Test Script** - Whole page of test case files / Combine all Rows of test cases.
+
