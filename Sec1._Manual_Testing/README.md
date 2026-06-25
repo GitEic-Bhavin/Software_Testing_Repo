@@ -41,9 +41,28 @@ Automation: You use tools that scan the written code for bugs, security vulnerab
 
 1. Shorter Runs
 
-- 
+- A performance test that runs for a short period (typically a few minutes).
+
+Purpose:
+
+- Check immediate system behavior.
+- Find quick performance issues.
+- Measure response time under load.
+
+Example:
+
+- Duration: 5–15 minutes
+- 500 users log in and browse products.
+
+Question answered:
+
+**Can the application handle this load for a short time ?**
 
 2. Longer Runs
+
+**Can the application remain stable for a long time ?**
+
+
 
 # 7 Principle of Testing
 
@@ -69,6 +88,33 @@ Automation: You use tools that scan the written code for bugs, security vulnerab
 - Like Static , QA Testing.
 
 **4. Defacts Clustering**
+
+**cluster == Group of defacts in a single module or sigle components**
+
+- You have 5 modules of your whole softwares.
+
+- You found some of defacts like
+
+  - Module A - 60
+  - Module B - 50
+  - Module C - 65
+  - Module D - 10
+  - Module E - 5
+
+Here Module A,B,C has most of bugs, defacts founds. In Module D and E only fewer bugs.
+
+- This is called `Defact Clustering`.
+
+- This is happens bcz of, 
+  - `Inexperienced Developers has written the code, 
+
+  - Very complex modules
+  - Modules are frequently modified
+
+  - Poorly desinged
+  - Have many integrations
+
+
 
 **5. Pesticide Paradox**
 
