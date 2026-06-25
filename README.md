@@ -204,3 +204,87 @@ It is a document (usually a table) used to **map and track requirements to test 
 ### Interview Answer (Short)
 
 > RTM (Requirement Traceability Matrix) is a document that links requirements with corresponding test cases to ensure complete test coverage and traceability throughout the software testing lifecycle.
+
+
+Bug Life Cycle
+---
+
+- Defect Management Process in Software Testing is a structured framework for identifying, categorizing, resolving, verifying, closing, and reporting bugs. 
+
+- It enables predictable communication between testers and developers, improves release quality, and reduces production-level escapes across the project lifecycle.
+
+## What is Defact Management Process ?
+
+- It is a systematic approach used in software testing to identiy, classify, fix, verify bugs before release the software.
+
+- The Bugs/Defact Lifecycle includes:
+
+  1. Discovery of the defact,
+  2. Categorizations - Set Sevarity and Priority and assign to the developer
+  3. Resolution by developer - Fixed by developer by updating code
+  4. Verifications - By tester, tester will `retesting` to ensure the defacts has been fixed properly.
+  5.Clouure
+  6. Defact Reporting
+
+![alt text](buglc.png)
+
+## Why do y0ou need defact management process ?
+
+Without Defact Management Process, the communications between tester and developer may be toxic due to verbally or through scattered msg.
+
+- Tester - Discover bugs, report to Test manager to developer to fix them.
+
+- Developer - One week later, with diff understanding of that bugs or misunderstanding, report to test manager about `We fixed those defacts`.
+
+- Test Manager - Will report to Tester about defact has been fixed by developer.
+
+- Tester - Will retest but another 10 defacts was founds and reports to Test manager.
+
+- So, **No Centrally management for defact**.
+
+### 1. Discovery
+
+- Discover most of defacts during testing by tester.
+
+- Use Jira and Report bugs on Jira and assign to Developer.
+
+- Once Developer will accept this bugs to fix them, its status will changed to **Accepted**.
+
+### 2. Categorizations
+
+- Here, Test manager will have to decide the **Sevarity** and **Priority** of that bugs, defact on Jira.
+
+  - **Critical**
+  - **High**
+  - **Medium**
+  - **Low**
+
+### 3. Defact Resolutions
+
+- Developer will schedule change management or schedule the fixes based on **Priority**, **Implement the corrections**.
+
+- Once defact has fixed by developer, developer will report back to test manager.
+
+**Assignment**: The defect is assigned to a developer or technician, and its status changes to Responding.
+
+**Schedule fixing**: The development team takes over and creates a fixing schedule based on the defect priority.
+
+**Fix the defect**: While the developers fix the defects, the Test Manager tracks progress against the planned schedule.
+
+**Report the resolution**: Developers send a report confirming which defects have been fixed and how.
+
+## 4. Verifications
+
+- After developer has fixed defact, Tester will **Retesting** to ensure the defact has really fixed and there are no more bugs.
+
+## 5. Closure
+
+- Once a defect has been fixed and verified, its status is changed to **Closed**.
+
+- If the defect is not properly resolved during verification, you must send a notice back to the development team to investigate it again. Closure indicates that the defect is no longer active in the system.
+
+## 6. Defact Reporting
+
+- **Defect Reporting** in software testing is the process by which Test Managers prepare and share defect status with the management team. 
+
+- The management team reviews the report and provides feedback or additional support if required. Defect reporting improves communication, tracking, and visibility around defects.
