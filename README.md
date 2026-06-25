@@ -51,6 +51,9 @@ This phase is also called the **Test Strategy phase**. Typically, in this stage,
 # Test Case Development Phase
 
 ## Overview
+
+- It translates requirements into detailed test cases and automation scripts. Each case specifies input, expected output, and pre-/post-conditions. A strong test suite ensures coverage and minimizes missed defects—critical since the majority of software failures are due to inadequate testing.
+
 - This phase involves creation, verification and rework of test cases and test scripts after the test plan is ready. 
 
 - Test data, is identified/created and is reviewed and then reworked as well.
@@ -76,6 +79,11 @@ Test environment decides the software and hardware conditions under which a work
 * Setup test Environment and test data
 * Perform smoke test on the build
 
+* Step 1) Identify required hardware, software, and network configurations.
+* Step 2) Install operating systems, databases, and application servers.
+* Step 3) Configure test data and connectivity.
+* Step 4) Conduct smoke tests to verify environment readiness.
+
 ## Deliverables
 * Environment ready with test data set up.
 * Smoke Test Results.
@@ -93,6 +101,8 @@ During this phase test team will carry out the testing based on test plans and t
 * Map defects to test cases in RTM
 * Retest the defect fixes
 * Track the defects to closure
+* Retesting fixes and performing regression checks.
+
 
 ## Deliverables
 * Completed RTM with execution status
@@ -104,7 +114,9 @@ During this phase test team will carry out the testing based on test plans and t
 # Test Cycle Closure Phase
 
 ## Overview
-Testing team will meet, discuss and analyze testing artifacts to identify strategies that have to be implemented in future, taking lessons from the current test cycle. The idea is to remove the process bottlenecks for future test cycles and share best practices for any similar projects in future.
+Testing team will meet, discuss and analyze testing artifacts to identify strategies that have to be implemented in future, taking lessons from the current test cycle. 
+
+The idea is to remove the process bottlenecks for future test cycles and share best practices for any similar projects in future.
 
 ## Activities
 * Evaluate cycle completion criteria based on Time, Test coverage, Cost, Software, Critical Business Objectives, Quality.
@@ -117,3 +129,78 @@ Testing team will meet, discuss and analyze testing artifacts to identify strate
 ## Deliverables
 * Test Closure report
 * Test metrics
+
+
+
+
+# STLC Entry and Exit Criteria
+
+## Overview
+Entry and Exit Criteria are essential checklists that bring discipline to each STLC phase. They act as "Quality Gates", preventing a phase from starting without the necessary inputs or concluding without verified outputs. 
+
+They ensure readiness before progression and completion standards before moving forward within the STLC phases.
+
+* **Entry Criteria:** Prerequisite conditions that must be satisfied before entering each STLC phase.
+* **Exit Criteria:** Definite accomplishments that must be completed before closing a phase and handing off to the next.
+
+## Phase-wise Entry and Exit Criteria
+
+| Phase | Entry Criteria | Exit Criteria |
+| :--- | :--- | :--- |
+| **Requirement Analysis** | - Requirements document available<br>- Business specifications finalized | - RTM created<br>- Test strategy defined |
+| **Test Planning** | - Requirements analysis complete<br>- Test strategy approved | - Test plan approved<br>- Resources allocated |
+| **Test Case Development** | - Test plan approved<br>- Requirements understood | - Test cases reviewed<br>- Test data prepared |
+| **Test Environment Setup** | - Environment requirements defined<br>- Infrastructure available | - Environment ready<br>- Smoke testing passed |
+| **Test Execution** | - Test cases ready<br>- Build deployed<br>- Environment stable | - Test cases executed<br>- Critical defects resolved |
+| **Test Closure** | - Test execution complete<br>- Exit criteria met | - Closure report signed off<br>- Artifacts archived |
+
+
+What is RTM ?
+---
+
+**RTM** stands for **Requirement Traceability Matrix** in software testing.
+
+It is a document (usually a table) used to **map and track requirements to test cases** to ensure that every requirement is tested and no functionality is missed.
+
+### Purpose of RTM
+
+* Verify that all requirements are covered by test cases.
+* Track the status of testing for each requirement.
+* Identify missing requirements or test cases.
+* Support impact analysis when requirements change.
+
+### Sample RTM
+
+| Requirement ID | Requirement Description | Test Case ID | Test Status |
+| -------------- | ----------------------- | ------------ | ----------- |
+| R001           | User Login              | TC001, TC002 | Passed      |
+| R002           | Password Reset          | TC003, TC004 | Passed      |
+| R003           | User Registration       | TC005, TC006 | Failed      |
+
+### Types of Traceability
+
+1. **Forward Traceability**
+
+   * Maps requirements → test cases.
+   * Ensures all requirements are tested.
+
+2. **Backward (Reverse) Traceability**
+
+   * Maps test cases → requirements.
+   * Ensures no unnecessary test cases exist.
+
+3. **Bidirectional Traceability**
+
+   * Combines both forward and backward traceability.
+
+### Benefits
+
+* Ensures 100% requirement coverage.
+* Helps detect missing functionalities.
+* Simplifies change management.
+* Improves test planning and reporting.
+* Useful during audits and compliance reviews.
+
+### Interview Answer (Short)
+
+> RTM (Requirement Traceability Matrix) is a document that links requirements with corresponding test cases to ensure complete test coverage and traceability throughout the software testing lifecycle.
