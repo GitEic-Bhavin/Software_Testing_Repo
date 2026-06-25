@@ -56,6 +56,12 @@ If you have modules like Module A, Module B like frontend, backend
 
 - By performing load testing - Increase load like send multiple request like 80k to the applications.
 
+**Load Testing**: Tests the application under the expected number of users (e.g., 10,000 concurrent users).
+
+**Stress Testing**: Pushes the application beyond its expected capacity to identify its breaking point (e.g., 100,000 concurrent users).
+
+**Volume Testing**: Tests the application with very large amounts of data (e.g., millions of records), regardless of the number of users.
+
 **7. Security Testing**
 
 - A security tester will look for how your applications is being secure.
@@ -134,7 +140,11 @@ If you have modules like Module A, Module B like frontend, backend
 
 **13. Stress Testing**
 
+
+Stress Testing: Pushes the application beyond its expected capacity to identify its breaking point (e.g., 100,000 concurrent users).
+
 **14. Volume Testing**
+Volume Testing: Tests the application with very large amounts of data (e.g., millions of records), regardless of the number of users.
 
 **15. Install Testing**
 
@@ -155,9 +165,26 @@ If you have modules like Module A, Module B like frontend, backend
 
 **19. Ad-Hoc Testing**
 
-- 
+- Ad-hoc testing is informal testing without predefined test cases.
+
+- Tester explores the application using experience and intuition.
+
+- Same as Exploratory Testing
+
 
 **20. Recovery Testing**
+
+Recovery testing checks whether the application can **recover correctly after a failure**.
+
+- Power failure
+
+- Server crash
+
+- Network failure
+
+- Database crash
+
+- System restart
 
 **21. Backend Testing**
 
