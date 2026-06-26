@@ -288,3 +288,75 @@ Without Defact Management Process, the communications between tester and develop
 - **Defect Reporting** in software testing is the process by which Test Managers prepare and share defect status with the management team. 
 
 - The management team reviews the report and provides feedback or additional support if required. Defect reporting improves communication, tracking, and visibility around defects.
+
+Test Documentations
+---
+
+Test documentations is way to manage documatations of whole STLC every phases.
+
+It ensures that
+ 
+  - `What we had planned  for testing ?`
+
+  - `What are doc created by testing team during testing like test cases, test scripts, entry/exit criteria ?`
+
+  - `How test was executed ?` 
+
+  - `How to test ?`
+
+  - `What to test ?`
+
+  - `When to test ?`
+
+  - `What level testing will have to done ?`
+  
+  - `What testing types will have to done ?`
+
+  - `Which testing strategy we have to follow ?`
+
+
+## Testing Documentations LifefCycle
+
+Testing documents are prepared across three major stages: before, during, and after testing. 
+
+Each stage has its own set of documents with a distinct purpose.
+
+### 1. Before Testing
+
+Documents prepared before test execution begins help the team plan effectively, define scope, and align on requirements before a single test is excute.
+
+### Key Documents
+
+  - **SRS (Software Requirements Specificiations)** - Define functional and non-functional requirements of the apps.
+
+  - **Test Policy Documents** - Its Company / Org Level Rules and Conditions to mantain quality of products. 
+
+    - "No release can go live with critical bugs opens".
+
+  - **Test Strategy Documents** - Describes the overall `Testing approach`, `Testing levals tools`, `Resource Planning`, `Responsibilites`.
+
+  - **Traceability Matrix (RTM)** - Maps requirements to corresponding test cases to ensure complete test coverage and requirement traceability.
+
+### 2. During Testing
+
+Documents created and updated during testing help the team track `execution status`, `log defects`, and `maintain a real-time record of testing activities`.
+
+### Key Documents
+  
+  - **Test Plan** - Defines testing scope, testing levels, schedules - when we have to start testing.
+
+  - **Test Case Documents** - Documented for detailed test scenarios, test cases, test steps, expected vs actual results.
+
+  - **Test Descriptions** - Step-by-step procedures and preconditions like **Entry criterias**, **Test Env** required to run a specific test case.
+
+  - ** Test Case Reports** - Records of what are status of test cases, Pass, Failed, Pending for next release, How many bugs are discovered , How many bugs are fixed.
+
+  - **Test Logs** - Exactly what happend during testing , its logs, errors, with timestamped records.
+
+### 3. After Testing
+
+- Once all testing has dones, It ensures the product is ready for release.
+
+### Key Documents
+
+  - **Test Summary Report** - It provides overall testing results including `Total executed tests`, `Passed test cases`, `Failed Test cases`, `Defacts found, fixed`
